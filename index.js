@@ -108,7 +108,7 @@ async function run() {
         const events = await db
           .collection("events")
           .find()
-          .sort({ date: 1 }) // sort by soonest deadlines
+          .sort({ date: 1 }) 
           .limit(6) 
           .toArray();
 
