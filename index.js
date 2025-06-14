@@ -131,7 +131,7 @@ async function run() {
             const user = await users.findOne({ email: event.email });
             return {
               ...event,
-              name: user?.name || "", // Add the user name to the task data
+              name: user?.name || "", 
             };
           })
         );
