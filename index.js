@@ -295,7 +295,7 @@ async function run() {
       try {
         const result = await bookings.deleteOne({
           _id: new ObjectId(bookingId),
-          userEmail: userEmail, // ensure user owns this booking
+          userEmail: userEmail, 
         });
 
         if (result.deletedCount === 0) {
