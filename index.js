@@ -201,7 +201,7 @@ async function run() {
           return res.status(404).json({ message: "Event not found" });
         }
 
-        // Ensure the user can only delete their own tasks
+       
         if (event.email !== userEmail) {
           return res
             .status(403)
