@@ -47,7 +47,7 @@ async function run() {
     const events = db.collection("events");
     const bookings = db.collection("bookings");
 
-    // Add event
+    
     app.post("/api/add-event", verifyToken, async (req, res) => {
       const { title, category, description, date, picture, location } =
         req.body;
