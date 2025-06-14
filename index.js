@@ -379,7 +379,7 @@ async function run() {
           return res.status(400).send("User not found");
         }
 
-        // Verify password (assumes bcrypt is used)
+        // Verify password 
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
           return res.status(400).send("Invalid credentials");
