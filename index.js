@@ -398,7 +398,7 @@ async function run() {
       }
     });
 
-    // Save user
+    // Save user api
     app.post("/api/save-user", async (req, res) => {
       const { name, email, photoURL } = req.body;
 
