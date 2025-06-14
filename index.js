@@ -109,7 +109,7 @@ async function run() {
           .collection("events")
           .find()
           .sort({ date: 1 }) // sort by soonest deadlines
-          .limit(6) // return only 6 tasks
+          .limit(6) 
           .toArray();
 
         res.status(200).json(events);
